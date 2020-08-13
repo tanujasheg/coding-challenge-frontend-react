@@ -1,6 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
+Live Demo:[http://quickest-work.surge.sh/](http://quickest-work.surge.sh/)
 
-Live Demo can be seen here : [http://earsplitting-eye.surge.sh/](http://earsplitting-eye.surge.sh/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
