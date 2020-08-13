@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live Demo can be seen here : [http://earsplitting-eye.surge.sh/](http://earsplitting-eye.surge.sh/)
+
 
 ## Available Scripts
 
