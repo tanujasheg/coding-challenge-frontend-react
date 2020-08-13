@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
+import '../App.css';
+import berlinlogo from "../Component/berlinlogo.png";
 
 function Navbar() {
-    return (
-        <div>
-           
-            <nav class="navbar navbar-expand-lg bg-dark mt-0 mb-2">
-            <a class="navbar-brand text-white text-center" href="#">
-             <h4>Bikewise</h4>
-            </a>
-            </nav> 
+  return (
+    <div className="jumbotron jumbotron-fluid">
+      <div className="container row">
+        <div className="col-4 "><img src={berlinlogo}></img></div>
+        <div className="col-8">
+        <h4 className="display-4">Police department of Berlin</h4>
+        <p className="lead">Stolen Bykes</p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

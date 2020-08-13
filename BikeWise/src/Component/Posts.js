@@ -9,22 +9,25 @@ const Posts = ({ posts, loading }) => {
        <>
 
        
-        <ul className="card-columns caards" style={{listStyleType: "none"}}>
+        <ul className=" caards" style={{listStyleType: "none"}}>
                 {posts.map(post => (
                 
               <li className="lists" key={post.id} >
-                  <div className="card h-100 text-white bg-dark mb-3">
-                   <img src= {post.media.image_url}
-                   class="card-img-top p-1" alt="..."/>
-                    <div className="card-body">
-                    <h6 className="card-title">{post.title}</h6>
-                    <p class="card-text">{post.address}</p>
-                    <a href={post.source.html_url} target="_blank"class="btn btn-primary">See More</a>
-                    <div class="card-footer mb-0">
-                <small class="text-muted text-white">Occured at:{post.occurred_at}</small>
+                    <div className="card h-10 text-white border-primary bg-dark mb-3">
+                        <div className="row no-gutters">
+                        <div class="col-md-4">
+                            <img src={post.media.image_url_thumb} class="card-img border-secondary mb-3" alt="..."/>
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{post.title}</h5>
+                                <p class="card-text">NULL{post.description}</p>
+                                <p class="card-text"><small class="text-muted">Occurred at:{post.occurred_at}</small></p>
+                            </div>
+                            </div>
+
+                        </div>
                     </div>
-                    </div>
-                  </div>
               </li> 
             ))}
         </ul>

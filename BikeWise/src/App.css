@@ -1,16 +1,13 @@
-.caards{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
+.card{
+  display:block;
 }
 
-
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    ul li .card{
-      display:block;
-    }
+.jumbotron{
+  width:80%;
+  height:200px;
+  background-color: antiquewhite;
+  border-color: brown;
+  margin-left: 10%;
+  padding: 10px;
 }
+
