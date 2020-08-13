@@ -4,7 +4,7 @@ import berlinlogo from "../Component/berlinlogo.png";
 
 function Navbar() {
   return (
-    <div className="jumbotron jumbotron-fluid">
+    <div className="jumbotron text-white">
       <div className="container row">
         <div className="col-4 "><img src={berlinlogo}></img></div>
         <div className="col-8">

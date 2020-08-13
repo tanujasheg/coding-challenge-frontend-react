@@ -13,7 +13,7 @@ const Posts = ({ posts, loading }) => {
                 {posts.map(post => (
                 
               <li className="lists" key={post.id} >
-                    <div className="card h-10 text-white border-primary bg-dark mb-3">
+                    <div className="card h-10 text-black border-primary mb-3">
                         <div className="row no-gutters">
                         <div class="col-md-4">
                             <img src={post.media.image_url_thumb} class="card-img border-secondary mb-3" alt="..."/>
