@@ -21,7 +21,8 @@ const Posts = ({ posts, loading }) => {
                             <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">{post.title}</h5>
-                                <p class="card-text">NULL{post.description}</p>
+                                <p class="card-text">{post.description}</p>
+                                <a href={post.source.html_url} target="_blank" class="btn btn-primary">View more</a>
                                 <p class="card-text"><small class="text-muted">Occurred at:{post.occurred_at}</small></p>
                             </div>
                             </div>
