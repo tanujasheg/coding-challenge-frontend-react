@@ -17,12 +17,18 @@ const App = () => {
   
   useEffect(() => {
     const fetchPost = async () => {
-      setLoading(true);
-      const res = await axios.get(
+      try{
+        setLoading(true);
+        const res = await axios.get(
         "https://bikewise.org:443/api/v2/incidents?page=1&incident_type=theft"
-      );
-      setPost(res.data.incidents);
-      setLoading(false);
+        );
+        setPost(res.data.incidents);
+        setLoading(false);
+      }catch (e){
+        alert("Opps there is some Problem");
+        console.log(e);
+      }
+      
     };
 
     fetchPost();
@@ -33,6 +39,8 @@ const App = () => {
   function searchDesc(posts){
     return posts.filter((post)=> post.title.toString().toLowerCase().indexOf(search.toLowerCase()) > -1);
   }
+
+  
   
   const indexOfLastPost = currentPage * postPerPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
